@@ -9,6 +9,7 @@ export default props =>
       {props.questions.map(question => (
         <li key={question.url}>
           <QuestionSummary
+            onSelect={props.onSelect}
             className="QuestionSummaryList__item"
             question={question}
           />

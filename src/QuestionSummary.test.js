@@ -19,7 +19,12 @@ it('displays question title', () => {
     url: '/questions/9890'
   };
 
-  ReactDOM.render(<QuestionSummary question={question} />, div);
+  const onSelect = () => {};
+
+  ReactDOM.render(
+    <QuestionSummary question={question} onSelect={onSelect} />,
+    div
+  );
 
   expect(div.textContent).toMatch(/Number 10/);
 

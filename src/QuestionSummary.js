@@ -5,7 +5,12 @@ import './QuestionSummary.css';
 
 export default props => (
   <div className={(props.className || '') + ' QuestionSummary '}>
-    <h2 className="QuestionSummary__title">{props.question.question}</h2>
+    <h2
+      className="QuestionSummary__title"
+      onClick={props.onSelect.bind(undefined, props.question.url)}
+    >
+      {props.question.question}
+    </h2>
     <time
       className="QuestionSummary__publishedAt"
       dateTime={props.question.published_at}

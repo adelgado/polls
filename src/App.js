@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import '../node_modules/normalize.css/normalize.css';
+
 import logo from './logo.svg';
 import './App.css';
 

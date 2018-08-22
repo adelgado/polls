@@ -1,0 +1,19 @@
+.QuestionSummary {
+  text-align: left;
+}
+
+.QuestionSummary__title,
+.QuestionSummary__publishedAt,
+.QuestionSummary__choices {
+  display: block;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.QuestionSummary__title {
+  color: #444;
+}
+
+.QuestionSummary__title:hover {
+  text-decoration: underline;
+}

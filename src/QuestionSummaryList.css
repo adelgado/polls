@@ -1,15 +1,13 @@
 .QuestionSummaryList {
   display: grid;
   align-self: start;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
   list-style: none;
-  margin: 0;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
   padding: 0;
-}
-
-.QuestionSummaryList__item {
-  overflow: hidden;
-  display: flex;
-  position: relative;
 }

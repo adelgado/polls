@@ -16,5 +16,5 @@ export default props =>
       ))}
     </ul>
   ) : (
-    <p>There are no questions to be dislayed</p>
+    <p>Loading...</p>
   );

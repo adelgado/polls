@@ -12,7 +12,7 @@ export default props => (
           <div>{item.choice}</div>
           <div>{item.votes} votes</div>
           {props.totalVotes > 0 && (
-            <div>{(item.votes / props.totalVotes) * 100} %</div>
+            <div>{Math.round((item.votes / props.totalVotes) * 100)} %</div>
           )}
         </li>
       ))}

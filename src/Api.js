@@ -8,5 +8,11 @@ export default {
     } else {
       return [];
     }
-  }
+  },
+
+  // These still need to be implemented
+
+  async createQuestion() {},
+
+  async vote(questionId, choiceId) {}
 };

@@ -16,4 +16,5 @@
 
 .QuestionSummary__title:hover {
   text-decoration: underline;
+  cursor: pointer;
 }

@@ -1,0 +1,36 @@
+.QuestionDetail {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.QuestionDetail__choices {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  list-style: none;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.QuestionDetail__choice {
+  width: 100%;
+  border-bottom: 1px solid grey;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.QuestionDetail__choice :first-child {
+  margin-right: auto;
+}
+
+.QuestionDetail__choice :not(:first-child) {
+  padding-right: 20px;
+}

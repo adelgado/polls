@@ -41,7 +41,15 @@ export default class QuestionsContainer extends React.Component {
       const question = this.state.questions.find(
         question => question.url === this.state.currentView
       );
-      return <QuestionDetail question={question} />;
+
+      const questionTotalVotes = question.choices.reduce(
+        (memo, item) => memo + item.votes,
+        0
+      );
+
+      return (
+        <QuestionDetail question={question} totalVotes={questionTotalVotes} />
+      );
     }
   }
 }
